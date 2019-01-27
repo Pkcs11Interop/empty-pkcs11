@@ -15,12 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\src\pkcs11-mock.c">
+    <ClCompile Include="..\..\..\src\empty-pkcs11.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\src\pkcs11-mock.h">
+    <ClInclude Include="..\..\..\src\empty-pkcs11.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

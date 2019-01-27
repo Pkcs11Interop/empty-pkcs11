@@ -19,10 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\src\pkcs11-mock.c" />
+    <ClCompile Include="..\..\..\src\empty-pkcs11.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\src\pkcs11-mock.h" />
+    <ClInclude Include="..\..\..\src\empty-pkcs11.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{078A7AAC-5D04-4270-868C-3585816EC8AD}</ProjectGuid>
