@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		487FCF101AB4E83300CF36DA /* pkcs11-mock.h in Headers */ = {isa = PBXBuildFile; fileRef = 487FCF0F1AB4E83300CF36DA /* pkcs11-mock.h */; };
-		487FCF121AB4E84D00CF36DA /* pkcs11-mock.c in Sources */ = {isa = PBXBuildFile; fileRef = 487FCF111AB4E84D00CF36DA /* pkcs11-mock.c */; };
+		487FCF101AB4E83300CF36DA /* empty-pkcs11.h in Headers */ = {isa = PBXBuildFile; fileRef = 487FCF0F1AB4E83300CF36DA /* empty-pkcs11.h */; };
+		487FCF121AB4E84D00CF36DA /* empty-pkcs11.c in Sources */ = {isa = PBXBuildFile; fileRef = 487FCF111AB4E84D00CF36DA /* empty-pkcs11.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		487FCF081AB4E78800CF36DA /* libpkcs11-mock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libpkcs11-mock.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		487FCF0F1AB4E83300CF36DA /* pkcs11-mock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "pkcs11-mock.h"; path = "../../src/pkcs11-mock.h"; sourceTree = "<group>"; };
-		487FCF111AB4E84D00CF36DA /* pkcs11-mock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "pkcs11-mock.c"; path = "../../src/pkcs11-mock.c"; sourceTree = "<group>"; };
+		487FCF081AB4E78800CF36DA /* libempty-pkcs11.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libempty-pkcs11.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		487FCF0F1AB4E83300CF36DA /* empty-pkcs11.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "empty-pkcs11.h"; path = "../../src/empty-pkcs11.h"; sourceTree = "<group>"; };
+		487FCF111AB4E84D00CF36DA /* empty-pkcs11.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "empty-pkcs11.c"; path = "../../src/empty-pkcs11.c"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,8 +31,8 @@
 		487FCEFF1AB4E78800CF36DA = {
 			isa = PBXGroup;
 			children = (
-				487FCF111AB4E84D00CF36DA /* pkcs11-mock.c */,
-				487FCF0F1AB4E83300CF36DA /* pkcs11-mock.h */,
+				487FCF111AB4E84D00CF36DA /* empty-pkcs11.c */,
+				487FCF0F1AB4E83300CF36DA /* empty-pkcs11.h */,
 				487FCF091AB4E78800CF36DA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,7 +40,7 @@
 		487FCF091AB4E78800CF36DA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				487FCF081AB4E78800CF36DA /* libpkcs11-mock.a */,
+				487FCF081AB4E78800CF36DA /* libempty-pkcs11.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,16 +52,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				487FCF101AB4E83300CF36DA /* pkcs11-mock.h in Headers */,
+				487FCF101AB4E83300CF36DA /* empty-pkcs11.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		487FCF071AB4E78800CF36DA /* pkcs11-mock */ = {
+		487FCF071AB4E78800CF36DA /* empty-pkcs11 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 487FCF0C1AB4E78800CF36DA /* Build configuration list for PBXNativeTarget "pkcs11-mock" */;
+			buildConfigurationList = 487FCF0C1AB4E78800CF36DA /* Build configuration list for PBXNativeTarget "empty-pkcs11" */;
 			buildPhases = (
 				487FCF041AB4E78800CF36DA /* Sources */,
 				487FCF051AB4E78800CF36DA /* Frameworks */,
@@ -71,9 +71,9 @@
 			);
 			dependencies = (
 			);
-			name = "pkcs11-mock";
-			productName = "pkcs11-mock";
-			productReference = 487FCF081AB4E78800CF36DA /* libpkcs11-mock.a */;
+			name = "empty-pkcs11";
+			productName = "empty-pkcs11";
+			productReference = 487FCF081AB4E78800CF36DA /* libempty-pkcs11.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -90,7 +90,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 487FCF031AB4E78800CF36DA /* Build configuration list for PBXProject "pkcs11-mock" */;
+			buildConfigurationList = 487FCF031AB4E78800CF36DA /* Build configuration list for PBXProject "empty-pkcs11" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -102,7 +102,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				487FCF071AB4E78800CF36DA /* pkcs11-mock */,
+				487FCF071AB4E78800CF36DA /* empty-pkcs11 */,
 			);
 		};
 /* End PBXProject section */
@@ -112,7 +112,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				487FCF121AB4E84D00CF36DA /* pkcs11-mock.c in Sources */,
+				487FCF121AB4E84D00CF36DA /* empty-pkcs11.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +220,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		487FCF031AB4E78800CF36DA /* Build configuration list for PBXProject "pkcs11-mock" */ = {
+		487FCF031AB4E78800CF36DA /* Build configuration list for PBXProject "empty-pkcs11" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				487FCF0A1AB4E78800CF36DA /* Debug */,
@@ -229,7 +229,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		487FCF0C1AB4E78800CF36DA /* Build configuration list for PBXNativeTarget "pkcs11-mock" */ = {
+		487FCF0C1AB4E78800CF36DA /* Build configuration list for PBXNativeTarget "empty-pkcs11" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				487FCF0D1AB4E78800CF36DA /* Debug */,
