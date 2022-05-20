@@ -6,7 +6,7 @@ SRC_DIR=../../src
 CC= gcc
 ARCH_FLAGS= -m32
 CFLAGS= $(ARCH_FLAGS) -Wall -Wextra -O2 -I$(SRC_DIR)
-LIBNAME=empty-pkcs11-x86.dylib
+LIBNAME=libempty-pkcs11-x86.dylib
 
 all: empty-pkcs11.o
 	$(CC) $(ARCH_FLAGS) -dynamiclib -o $(LIBNAME) \
