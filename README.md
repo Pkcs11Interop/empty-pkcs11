@@ -17,7 +17,7 @@ EMPTY-PKCS11
 
 ## Overview
 
-EMPTY-PKCS11 is minimalistic C library that implements [PKCS#11 v2.20](https://github.com/Pkcs11Interop/PKCS11-SPECS/tree/master/v2.20) API in the simplest possible way - all PKCS#11 functions except `C_GetFunctionList` function return `CKR_FUNCTION_NOT_SUPPORTED` return value.
+EMPTY-PKCS11 is minimalistic C library that implements [PKCS#11 v3.1](https://github.com/Pkcs11Interop/PKCS11-SPECS/tree/master/v3.1) API in the simplest possible way - all PKCS#11 functions except `C_GetFunctionList`, `C_GetInterfaceList` and `C_GetInterface` return `CKR_FUNCTION_NOT_SUPPORTED` return value.
 
 It has been tested on several desktop and mobile platforms and as such can be used as a lightweight skeleton for the development of portable PKCS#11 libraries.
 
@@ -31,7 +31,7 @@ Windows libraries are signed with [code-signing certificate of Jaroslav Imrich](
 
 ### Windows
 
-Execute the build script on a 64-bit Windows machine with [Visual Studio 2017 Community](https://visualstudio.microsoft.com/vs/) (or newer) installed:
+Execute the build script on a 64-bit Windows machine with [Visual Studio 2022 Community](https://visualstudio.microsoft.com/vs/) (or newer) installed:
 
 	cd build/windows/
 	build.bat
@@ -77,7 +77,7 @@ The script should use Xcode to build Mach-O universal binary (`libempty-pkcs11.a
 ## License
 
 EMPTY-PKCS11 is available under the terms of the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).  
-[Human friendly license summary](https://tldrlegal.com/l/apache2) is available at tldrlegal.com but the [full license text](LICENSE.md) always prevails.
+[Human friendly license summary](https://www.tldrlegal.com/license/apache-license-2-0-apache-2-0) is available at tldrlegal.com but the [full license text](LICENSE.md) always prevails.
 
 ## About
 
