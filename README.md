@@ -9,7 +9,7 @@ EMPTY-PKCS11
 * [Building the source](#building-the-source)
   * [Windows](#windows)
   * [Linux](#linux)
-  * [Mac OS X](#mac-os-x)
+  * [macOS](#macos)
   * [Android](#android)
   * [iOS](#ios)
 * [License](#license)
@@ -40,25 +40,25 @@ The script should use Visual Studio to build both 32-bit (`empty-pkcs11-x86.dll`
 
 ### Linux
 
-Execute the build script on a 64-bit Linux machine with GCC, GNU Make and GCC multilib support installed (available in [build-essential](https://packages.ubuntu.com/bionic/build-essential) and [gcc-multilib](https://packages.ubuntu.com/bionic/gcc-multilib) packages on Ubuntu 18.04 LTS):
+Execute the build script on a 64-bit Linux machine with GCC, GNU Make and GCC multilib support installed (available in [build-essential](https://packages.ubuntu.com/noble/build-essential) and [gcc-multilib](https://packages.ubuntu.com/noble/gcc-multilib) packages on Ubuntu 24.04 LTS):
 
 	cd build/linux/
 	sh build.sh
 
 The script should use GCC to build both 32-bit (`empty-pkcs11-x86.so`) and 64-bit (`empty-pkcs11-x64.so`) versions of the library.
 
-### Mac OS X
+### macOS
 
-Execute the build script on a 64-bit Mac OS X machine with [Xcode](https://developer.apple.com/xcode/) and its "Command Line Tools" extension installed:
+Execute the build script on a 64-bit macOS machine with [Xcode](https://developer.apple.com/xcode/) and its "Command Line Tools" extension installed:
 
-	cd build/osx/
+	cd build/macos/
 	sh build.sh
 
 The script should use GCC to build both 32-bit (`empty-pkcs11-x86.dylib`) and 64-bit (`empty-pkcs11-x64.dylib`) versions of the library.
 
 ### Android
 
-Execute the build script on a 64-bit Windows machine with [Android NDK r19](https://developer.android.com/ndk/) (or newer) unpacked in `C:\android-ndk` folder:
+Execute the build script on a 64-bit Windows machine with [Android NDK r26d](https://developer.android.com/ndk/) (or newer) unpacked in `C:\android-ndk` folder:
 
 	cd build/android/
 	build.bat
@@ -67,12 +67,12 @@ The script should use Android NDK to build the library for all supported archite
 
 ### iOS
 
-Execute the build script on a 64-bit Mac OS X machine with [Xcode](https://developer.apple.com/xcode/) and its "Command Line Tools" extension installed:
+Execute the build script on a 64-bit macOS machine with [Xcode](https://developer.apple.com/xcode/) and its "Command Line Tools" extension installed:
 
 	cd build/ios/
 	sh build.sh
 
-The script should use Xcode to build Mach-O universal binary (`libempty-pkcs11.a`) usable on all supported architectures.
+The script should use Xcode to build the library with iphonesimulator SDK (`libempty-pkcs11-iphonesimulator.a`) and iphoneos SDK (`libempty-pkcs11-iphoneos.a`).
 
 ## License
 
