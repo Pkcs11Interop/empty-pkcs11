@@ -54,7 +54,7 @@ Execute the build script on a 64-bit macOS machine with [Xcode](https://develope
 	cd build/macos/
 	sh build.sh
 
-The script should use GCC to build both 32-bit (`empty-pkcs11-x86.dylib`) and 64-bit (`empty-pkcs11-x64.dylib`) versions of the library.
+The script should use Clang to build Mach-O universal binary (`empty-pkcs11.dylib`) usable on both Apple silicon and Intel-based Mac computers.
 
 ### Android
 
