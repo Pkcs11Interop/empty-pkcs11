@@ -3,10 +3,10 @@
 
 SRC_DIR=../../src
 
-CC= gcc
-ARCH_FLAGS= -m32
+CC= clang
+ARCH_FLAGS= -target arm64-apple-macos11
 CFLAGS= $(ARCH_FLAGS) -Wall -Wextra -O2 -I$(SRC_DIR)
-LIBNAME=empty-pkcs11-x86.dylib
+LIBNAME=empty-pkcs11-arm64.dylib
 
 all: empty-pkcs11.o
 	$(CC) $(ARCH_FLAGS) -dynamiclib -o $(LIBNAME) \

@@ -1,5 +1,5 @@
 /*
- *  Copyright 2015-2017 The Pkcs11Interop Project
+ *  Copyright 2011-2024 The Pkcs11Interop Project
  *
  *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
@@ -22,6 +22,10 @@
 
 #include <stdio.h>
 #include <string.h>
+
+
+// Removes unused parameter warning
+#define UNUSED(x) (void)(x)
 
 
 #ifdef _WIN32

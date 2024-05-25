@@ -9,7 +9,7 @@ EMPTY-PKCS11
 * [Building the source](#building-the-source)
   * [Windows](#windows)
   * [Linux](#linux)
-  * [Mac OS X](#mac-os-x)
+  * [macOS](#macos)
   * [Android](#android)
   * [iOS](#ios)
 * [License](#license)
@@ -17,7 +17,7 @@ EMPTY-PKCS11
 
 ## Overview
 
-EMPTY-PKCS11 is minimalistic C library that implements [PKCS#11 v2.20](https://github.com/Pkcs11Interop/PKCS11-SPECS/tree/master/v2.20) API in the simplest possible way - all PKCS#11 functions except `C_GetFunctionList` function return `CKR_FUNCTION_NOT_SUPPORTED` return value.
+EMPTY-PKCS11 is minimalistic C library that implements [PKCS#11 v3.1](https://github.com/Pkcs11Interop/PKCS11-SPECS/tree/master/v3.1) API in the simplest possible way - all PKCS#11 functions except `C_GetFunctionList`, `C_GetInterfaceList` and `C_GetInterface` return `CKR_FUNCTION_NOT_SUPPORTED` return value.
 
 It has been tested on several desktop and mobile platforms and as such can be used as a lightweight skeleton for the development of portable PKCS#11 libraries.
 
@@ -31,7 +31,7 @@ Windows libraries are signed with [code-signing certificate of Jaroslav Imrich](
 
 ### Windows
 
-Execute the build script on a 64-bit Windows machine with [Visual Studio 2017 Community](https://visualstudio.microsoft.com/vs/) (or newer) installed:
+Execute the build script on a 64-bit Windows machine with [Visual Studio 2022 Community](https://visualstudio.microsoft.com/vs/) (or newer) installed:
 
 	cd build/windows/
 	build.bat
@@ -40,25 +40,25 @@ The script should use Visual Studio to build both 32-bit (`empty-pkcs11-x86.dll`
 
 ### Linux
 
-Execute the build script on a 64-bit Linux machine with GCC, GNU Make and GCC multilib support installed (available in [build-essential](https://packages.ubuntu.com/bionic/build-essential) and [gcc-multilib](https://packages.ubuntu.com/bionic/gcc-multilib) packages on Ubuntu 18.04 LTS):
+Execute the build script on a 64-bit Linux machine with GCC, GNU Make and GCC multilib support installed (available in [build-essential](https://packages.ubuntu.com/noble/build-essential) and [gcc-multilib](https://packages.ubuntu.com/noble/gcc-multilib) packages on Ubuntu 24.04 LTS):
 
 	cd build/linux/
 	sh build.sh
 
 The script should use GCC to build both 32-bit (`empty-pkcs11-x86.so`) and 64-bit (`empty-pkcs11-x64.so`) versions of the library.
 
-### Mac OS X
+### macOS
 
-Execute the build script on a 64-bit Mac OS X machine with [Xcode](https://developer.apple.com/xcode/) and its "Command Line Tools" extension installed:
+Execute the build script on a 64-bit macOS machine with [Xcode](https://developer.apple.com/xcode/) and its "Command Line Tools" extension installed:
 
-	cd build/osx/
+	cd build/macos/
 	sh build.sh
 
-The script should use GCC to build both 32-bit (`empty-pkcs11-x86.dylib`) and 64-bit (`empty-pkcs11-x64.dylib`) versions of the library.
+The script should use Clang to build Mach-O universal binary (`empty-pkcs11.dylib`) usable on both Apple silicon and Intel-based Mac computers.
 
 ### Android
 
-Execute the build script on a 64-bit Windows machine with [Android NDK r19](https://developer.android.com/ndk/) (or newer) unpacked in `C:\android-ndk` folder:
+Execute the build script on a 64-bit Windows machine with [Android NDK r26d](https://developer.android.com/ndk/) (or newer) unpacked in `C:\android-ndk` folder:
 
 	cd build/android/
 	build.bat
@@ -67,17 +67,17 @@ The script should use Android NDK to build the library for all supported archite
 
 ### iOS
 
-Execute the build script on a 64-bit Mac OS X machine with [Xcode](https://developer.apple.com/xcode/) and its "Command Line Tools" extension installed:
+Execute the build script on a 64-bit macOS machine with [Xcode](https://developer.apple.com/xcode/) and its "Command Line Tools" extension installed:
 
 	cd build/ios/
 	sh build.sh
 
-The script should use Xcode to build Mach-O universal binary (`libempty-pkcs11.a`) usable on all supported architectures.
+The script should use Xcode to build the library with iphonesimulator SDK (`libempty-pkcs11-iphonesimulator.a`) and iphoneos SDK (`libempty-pkcs11-iphoneos.a`).
 
 ## License
 
 EMPTY-PKCS11 is available under the terms of the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).  
-[Human friendly license summary](https://tldrlegal.com/l/apache2) is available at tldrlegal.com but the [full license text](LICENSE.md) always prevails.
+[Human friendly license summary](https://www.tldrlegal.com/license/apache-license-2-0-apache-2-0) is available at tldrlegal.com but the [full license text](LICENSE.md) always prevails.
 
 ## About
 
