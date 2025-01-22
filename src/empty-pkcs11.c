@@ -966,8 +966,8 @@ CK_DEFINE_FUNCTION(CK_RV, C_GetInterface)(CK_UTF8CHAR_PTR pInterfaceName, CK_VER
 
 	if (NULL != pInterfaceName)
 	{
-		const char* requested_interface_name = (const char *) pInterfaceName;
-		const char *supported_interface_name = "PKCS 11";
+		const char* requested_interface_name = (const char*)pInterfaceName;
+		const char* supported_interface_name = "PKCS 11";
 
 		if (strlen(requested_interface_name) != strlen(supported_interface_name) || 0 != strcmp(requested_interface_name, supported_interface_name))
 		{
@@ -978,12 +978,12 @@ CK_DEFINE_FUNCTION(CK_RV, C_GetInterface)(CK_UTF8CHAR_PTR pInterfaceName, CK_VER
 
 	if (NULL != pVersion)
 	{
-		if (pVersion->major != empty_pkcs11_2_40_functions.version.major && pVersion->minor != empty_pkcs11_2_40_functions.version.minor)
+		if (pVersion->major == empty_pkcs11_2_40_functions.version.major && pVersion->minor == empty_pkcs11_2_40_functions.version.minor)
 		{
 			*ppInterface = &empty_pkcs11_2_40_interface;
 			return CKR_OK;
 		}
-		else if (pVersion->major != empty_pkcs11_3_1_functions.version.major && pVersion->minor != empty_pkcs11_3_1_functions.version.minor)
+		else if (pVersion->major == empty_pkcs11_3_1_functions.version.major && pVersion->minor == empty_pkcs11_3_1_functions.version.minor)
 		{
 			*ppInterface = &empty_pkcs11_3_1_interface;
 			return CKR_OK;
