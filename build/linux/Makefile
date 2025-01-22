@@ -5,7 +5,7 @@ SRC_DIR=../../src
 
 CC= gcc
 ARCH_FLAGS= -m32
-CFLAGS= $(ARCH_FLAGS) -Wall -Wextra -O2 -I$(SRC_DIR)
+CFLAGS= $(ARCH_FLAGS) -Wall -Wextra -Werror -O2 -I$(SRC_DIR)
 LIBNAME=empty-pkcs11-x86.so
 
 all: empty-pkcs11.o

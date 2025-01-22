@@ -5,7 +5,7 @@ SRC_DIR=../../src
 
 CC= clang
 ARCH_FLAGS= -target arm64-apple-macos11
-CFLAGS= $(ARCH_FLAGS) -Wall -Wextra -O2 -I$(SRC_DIR)
+CFLAGS= $(ARCH_FLAGS) -Wall -Wextra -Werror -O2 -I$(SRC_DIR)
 LIBNAME=empty-pkcs11-arm64.dylib
 
 all: empty-pkcs11.o

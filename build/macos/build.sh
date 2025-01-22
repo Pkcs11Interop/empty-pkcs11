@@ -15,3 +15,4 @@ rm Makefile.x86_64
 make clean
 
 lipo -create -output empty-pkcs11.dylib empty-pkcs11-arm64.dylib empty-pkcs11-x86_64.dylib
+rm empty-pkcs11-arm64.dylib empty-pkcs11-x86_64.dylib
