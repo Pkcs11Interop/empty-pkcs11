@@ -31,19 +31,23 @@ Windows libraries are signed with [code-signing certificate of Jaroslav Imrich](
 
 ### Windows
 
-Execute the build script on a 64-bit Windows machine with [Visual Studio 2022 Community](https://visualstudio.microsoft.com/vs/) (or newer) installed:
+Execute the build script on a 64-bit Windows machine with [Visual Studio 2022 Community](https://visualstudio.microsoft.com/vs/community/) (or newer) installed:
 
-	cd build/windows/
-	build.bat
-	
+```
+cd build/windows/
+build.bat
+```
+
 The script should use Visual Studio to build both 32-bit (`empty-pkcs11-x86.dll`) and 64-bit (`empty-pkcs11-x64.dll`) versions of the library.
 
 ### Linux
 
 Execute the build script on a 64-bit Linux machine with GCC, GNU Make and GCC multilib support installed (available in [build-essential](https://packages.ubuntu.com/noble/build-essential) and [gcc-multilib](https://packages.ubuntu.com/noble/gcc-multilib) packages on Ubuntu 24.04 LTS):
 
-	cd build/linux/
-	sh build.sh
+```
+cd build/linux/
+sh build.sh
+```
 
 The script should use GCC to build both 32-bit (`empty-pkcs11-x86.so`) and 64-bit (`empty-pkcs11-x64.so`) versions of the library.
 
@@ -51,8 +55,10 @@ The script should use GCC to build both 32-bit (`empty-pkcs11-x86.so`) and 64-bi
 
 Execute the build script on a 64-bit macOS machine with [Xcode](https://developer.apple.com/xcode/) and its "Command Line Tools" extension installed:
 
-	cd build/macos/
-	sh build.sh
+```
+cd build/macos/
+sh build.sh
+```
 
 The script should use Clang to build Mach-O universal binary (`empty-pkcs11.dylib`) usable on both Apple silicon and Intel-based Mac computers.
 
@@ -60,8 +66,10 @@ The script should use Clang to build Mach-O universal binary (`empty-pkcs11.dyli
 
 Execute the build script on a 64-bit Windows machine with [Android NDK r26d](https://developer.android.com/ndk/) (or newer) unpacked in `C:\android-ndk` folder:
 
-	cd build/android/
-	build.bat
+```
+cd build/android/
+build.bat
+```
 	
 The script should use Android NDK to build the library for all supported architectures. Results will be located in `libs` directory and its subdirectories.
 
@@ -69,8 +77,10 @@ The script should use Android NDK to build the library for all supported archite
 
 Execute the build script on a 64-bit macOS machine with [Xcode](https://developer.apple.com/xcode/) and its "Command Line Tools" extension installed:
 
-	cd build/ios/
-	sh build.sh
+```
+cd build/ios/
+sh build.sh
+```
 
 The script should use Xcode to build the library with iphonesimulator SDK (`libempty-pkcs11-iphonesimulator.a`) and iphoneos SDK (`libempty-pkcs11-iphoneos.a`).
 
@@ -81,5 +91,5 @@ EMPTY-PKCS11 is available under the terms of the [Apache License, Version 2.0](h
 
 ## About
 
-EMPTY-PKCS11 has been developed as a part of [Pkcs11Interop](https://www.pkcs11interop.net/) project by [Jaroslav Imrich](https://www.jimrich.sk/).  
+EMPTY-PKCS11 has been written for the [Pkcs11Interop](https://www.pkcs11interop.net/) project by [Jaroslav Imrich](https://www.jimrich.sk/).  
 Please visit project website - [pkcs11interop.net](https://www.pkcs11interop.net) - for more information.
