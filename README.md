@@ -31,7 +31,7 @@ Windows libraries are signed with [code-signing certificate of Jaroslav Imrich](
 
 ### Windows
 
-Execute the build script on a 64-bit Windows machine with [Visual Studio 2022 Community](https://visualstudio.microsoft.com/vs/community/) (or newer) installed:
+Execute the build script on a 64-bit Windows machine with [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) (or newer) installed:
 
 ```
 cd build/windows/
@@ -64,13 +64,13 @@ The script should use Clang to build Mach-O universal binary (`empty-pkcs11.dyli
 
 ### Android
 
-Execute the build script on a 64-bit Windows machine with [Android NDK r26d](https://developer.android.com/ndk/) (or newer) unpacked in `C:\android-ndk` folder:
+Execute the build script on a 64-bit Windows machine with [Android NDK r26d](https://developer.android.com/ndk/) (or newer) unpacked in `C:\android-ndk` or in a folder defined by `ANDROID_NDK` environment variable:
 
 ```
 cd build/android/
 build.bat
 ```
-	
+
 The script should use Android NDK to build the library for all supported architectures. Results will be located in `libs` directory and its subdirectories.
 
 ### iOS
