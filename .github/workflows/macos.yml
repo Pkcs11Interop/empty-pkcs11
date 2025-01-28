@@ -1,0 +1,26 @@
+name: Build for macOS
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout source
+      uses: actions/checkout@v4
+      
+    - name: Build source
+      run: |
+        cd build/macos/
+        sh build.sh
+
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: empty-pkcs11-macos
+        path: build/macos/empty-pkcs11.dylib
