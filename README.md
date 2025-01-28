@@ -2,6 +2,12 @@ EMPTY-PKCS11
 ===========
 **PKCS#11 library with the simplest possible implementation**
 
+[![Windows](https://github.com/Pkcs11Interop/empty-pkcs11/actions/workflows/windows.yml/badge.svg?branch=master)](https://github.com/Pkcs11Interop/empty-pkcs11/actions/workflows/windows.yml)
+[![Linux](https://github.com/Pkcs11Interop/empty-pkcs11/actions/workflows/linux.yml/badge.svg?branch=master)](https://github.com/Pkcs11Interop/empty-pkcs11/actions/workflows/linux.yml)
+[![macOS](https://github.com/Pkcs11Interop/empty-pkcs11/actions/workflows/macos.yml/badge.svg?branch=master)](https://github.com/Pkcs11Interop/empty-pkcs11/actions/workflows/macos.yml)
+[![Android](https://github.com/Pkcs11Interop/empty-pkcs11/actions/workflows/android.yml/badge.svg?branch=master)](https://github.com/Pkcs11Interop/empty-pkcs11/actions/workflows/android.yml)
+[![iOS](https://github.com/Pkcs11Interop/empty-pkcs11/actions/workflows/ios.yml/badge.svg?branch=master)](https://github.com/Pkcs11Interop/empty-pkcs11/actions/workflows/ios.yml)
+
 ## Table of Contents
 
 * [Overview](#overview)
