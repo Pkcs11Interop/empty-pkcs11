@@ -1,0 +1,6 @@
+EMPTY-PKCS11 2.0.0 (2025-01-29)
+ - Implements PKCS#11 v3.1
+ - Targets current platforms
+
+EMPTY-PKCS11 1.0.0 (2019-01-29)
+ - Initial stable release
